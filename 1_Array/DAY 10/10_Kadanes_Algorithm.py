@@ -14,8 +14,7 @@ class Solution:
                 
         return maxSum
 
-# Main execution
 if __name__ == "__main__":
     s = Solution()
-    arr = [2, 3, -8, 7, -1, 2, 3]  # Input array
+    arr = [2, 3, -8, 7, -1, 2, 3] 
     print("Maximum Subarray Sum:", s.maxSubArraySum(arr))  # Print the result
