@@ -1,35 +1,35 @@
 class Solution:
-    def myAtoi(self, s):
+    def myAtoi(self, s : str)->int:
         index =0
         res =0
-        sign = 1
-
-        #To remove white space
-        while index<len(s) and s[index] == " ":
-            index+=1
+        sign =1
+        max = 2**31-1
+        min = -2**31
         
-
-        #To find sign 
-        if index<len(s) and (s[index]=="+" or s[index]=='-'):
+        while index<len(s) and s[index]==' ':
+            index+=1
+            
+        if index<len(s) and (s[index]=='+' or s[index]=='-'):
             if s[index]=='-':
-                sign = -1
+                sign=-1
             index+=1
-
-        #To check over and under flow
-        if res > (2**31 - 1):
-            return sign * (2**31 - 1) if sign == 1 else -2**31
-        
-        #To conver and store the int values
-        while index<len(s):
+            
+        if res>(2**31-1):
+            return sign*(2**31-1)if sign==1 else -2**31
+            
+        while index<len(s) and '0'<=s[index]<='9':
             digit = ord(s[index])-ord('0')
-            res = res*10+digit
+            if res>(max - digit)//10:
+                return max if sign ==1 else min
+            res=res*10+digit
             index+=1
-
         
+        
+            
         return res*sign
-
         
-
+        if res == 0:
+            return 0
 
 
 
