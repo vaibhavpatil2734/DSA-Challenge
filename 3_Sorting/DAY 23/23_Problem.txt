@@ -1,0 +1,33 @@
+Bubble Sort
+
+Difficulty: Easy
+
+Problem Statement:
+Implement the Bubble Sort algorithm to sort an array of integers in ascending order. 
+In Bubble Sort, adjacent elements are compared, and if they are in the wrong order, they are swapped. 
+This process is repeated for all elements in the array until the array is sorted.
+
+Algorithm:
+1. Start at the beginning of the array.
+2. Compare each pair of adjacent elements.
+3. Swap the elements if the first element is greater than the second.
+4. Repeat this process for all elements except the last sorted ones.
+5. Continue until no swaps are needed (the array is sorted).
+
+Examples:
+
+Input: arr[] = [5, 1, 4, 2, 8]
+Output: [1, 2, 4, 5, 8]
+Explanation: After performing Bubble Sort, the array becomes sorted in ascending order.
+
+Input: arr[] = [64, 34, 25, 12, 22, 11, 90]
+Output: [11, 12, 22, 25, 34, 64, 90]
+Explanation: The array is sorted step by step using Bubble Sort.
+
+Input: arr[] = [1, 2, 3, 4, 5]
+Output: [1, 2, 3, 4, 5]
+Explanation: The array is already sorted, so no swaps are needed.
+
+Constraints:
+1 ≤ arr.size() ≤ 10^3
+-10^3 ≤ arr[i] ≤ 10^3
