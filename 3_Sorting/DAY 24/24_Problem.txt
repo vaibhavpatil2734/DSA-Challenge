@@ -1,0 +1,39 @@
+Selection Sort
+
+Problem Statement:
+Implement the Selection Sort algorithm to sort an array of integers in ascending order.
+In Selection Sort, the smallest (or largest, depending on sorting order) element is selected from the unsorted part of the array and swapped with the first element of the unsorted part. This process is repeated until the entire array is sorted.
+
+Algorithm:
+1. Start with the first element in the array (assume it's the smallest).
+2. Traverse the unsorted portion of the array to find the smallest element.
+3. Swap the smallest element with the first element of the unsorted part.
+4. Repeat this process for all unsorted elements.
+5. Continue until the array is completely sorted.
+
+Examples:
+
+Input:
+arr[] = [5, 1, 4, 2, 8]
+Output:
+[1, 2, 4, 5, 8]
+Explanation:
+After performing Selection Sort, the array becomes sorted in ascending order.
+
+Input:
+arr[] = [64, 34, 25, 12, 22, 11, 90]
+Output:
+[11, 12, 22, 25, 34, 64, 90]
+Explanation:
+The array is sorted step by step using Selection Sort.
+
+Input:
+arr[] = [1, 2, 3, 4, 5]
+Output:
+[1, 2, 3, 4, 5]
+Explanation:
+The array is already sorted, so no swaps are needed.
+
+Constraints:
+1 ≤ arr.size() ≤ 10^3
+-10^3 ≤ arr[i] ≤ 10^3

@@ -1,0 +1,40 @@
+Insertion Sort
+
+Problem Statement:
+Implement the Insertion Sort algorithm to sort an array of integers in ascending order. 
+In Insertion Sort, the array is virtually split into a sorted and an unsorted part. 
+Values from the unsorted part are picked and placed at the correct position in the sorted part.
+
+Algorithm:
+1. Start with the second element (index 1) in the array, considering the first element as sorted.
+2. Compare the current element with the elements in the sorted part of the array.
+3. Shift the sorted elements that are greater than the current element one position to the right.
+4. Insert the current element into its correct position in the sorted part.
+5. Repeat the process for all remaining elements in the array.
+
+Examples:
+
+Input:
+arr[] = [12, 11, 13, 5, 6]
+Output:
+[5, 6, 11, 12, 13]
+Explanation:
+After performing Insertion Sort, the array becomes sorted in ascending order.
+
+Input:
+arr[] = [64, 34, 25, 12, 22, 11, 90]
+Output:
+[11, 12, 22, 25, 34, 64, 90]
+Explanation:
+The array is sorted step by step using Insertion Sort.
+
+Input:
+arr[] = [1, 2, 3, 4, 5]
+Output:
+[1, 2, 3, 4, 5]
+Explanation:
+The array is already sorted, so no changes are made.
+
+Constraints:
+1 ≤ arr.size() ≤ 10^3
+-10^3 ≤ arr[i] ≤ 10^3
