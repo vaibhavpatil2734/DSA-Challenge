@@ -1,0 +1,44 @@
+
+Simple Merge Sort
+
+Problem Statement:
+Implement a Simple Merge Sort algorithm to merge two pre-sorted arrays into a single sorted array in ascending order. The algorithm should traverse both arrays using pointers to compare and merge their elements efficiently without sorting the combined array again.
+
+Algorithm:
+1. Use two pointers, one for each array, to track the current element being compared.
+2. Compare the elements at the current positions of the two pointers.
+3. Append the smaller element to the result array and move the corresponding pointer forward.
+4. If one array is exhausted, append the remaining elements of the other array to the result.
+5. Return the merged sorted array.
+
+Examples:
+
+Input:
+arr1 = [1, 3, 5, 7]
+arr2 = [2, 4, 6, 8]
+Output:
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+Explanation:
+The two arrays are merged by comparing elements step-by-step:
+1. Compare 1 and 2, append 1.
+2. Compare 3 and 2, append 2.
+3. Continue until all elements are merged.
+
+Input:
+arr1 = [1, 4, 7, 12]
+arr2 = [2, 3, 5, 10, 25]
+Output:
+[1, 2, 3, 4, 5, 7, 10, 12, 25]
+
+Explanation:
+The elements from both arrays are merged into a single sorted array in ascending order.
+
+Constraints:
+- 1 ≤ arr1.size(), arr2.size() ≤ 10³
+- -10³ ≤ arr1[i], arr2[i] ≤ 10³
+- Both arrays are already sorted in ascending order.
+
+Notes:
+- The algorithm should not sort the arrays but only merge them efficiently.
+- The time complexity of the merge operation is O(n + m), where n and m are the sizes of the two arrays.
