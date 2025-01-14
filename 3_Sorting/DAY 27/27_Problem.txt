@@ -1,0 +1,49 @@
+Divide and Conquer Merge Sort
+Implement the Divide and Conquer Merge Sort algorithm to sort an unsorted array in ascending order. The algorithm should divide the array into smaller subarrays, sort them recursively, and merge the sorted subarrays into a single sorted array.
+
+---
+
+Algorithm:  
+1. Divide:  
+   - Split the array into two halves.
+   - Recursively apply the merge sort algorithm to each half until the subarrays have only one element (base case).
+
+2. Conquer (Merge):  
+   - Use a helper function to merge two sorted subarrays into a single sorted array.
+   - Compare the elements of both subarrays and append the smaller element to the result array.
+
+3. Combine:  
+   - Return the fully sorted array obtained from merging the sorted halves.
+
+---
+
+Examples:
+
+1. Input:  
+   `arr = [5, 2, 9, 1, 5, 6]`  
+   Output:  
+   `[1, 2, 5, 5, 6, 9]`
+
+   Explanation:  
+   - Split the array into `[5, 2, 9]` and `[1, 5, 6]`.
+   - Recursively split into smaller subarrays: `[5]`, `[2, 9]`, `[1]`, `[5, 6]`.
+   - Merge sorted subarrays step by step until the entire array is sorted.
+
+2. Input:  
+   `arr = [12, 4, 7, 2, 15, 9]`  
+   Output:  
+   `[2, 4, 7, 9, 12, 15]`
+
+---
+
+Constraints:  
+- \(1 ≤ \text{arr.size()} ≤ 10^3\)  
+- \(-10^3 ≤ \text{arr}[i] ≤ 10^3\)  
+- The algorithm should use the divide-and-conquer approach efficiently.
+
+---
+
+Notes:
+- The merge operation should be efficient with a time complexity of \(O(n)\) for merging two sorted subarrays.
+- The overall time complexity of Merge Sort is \(O(n \log n)\), where \(n\) is the size of the array.
+- The algorithm should be implemented recursively.
