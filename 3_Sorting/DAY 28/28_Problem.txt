@@ -1,0 +1,29 @@
+Problem: Sorting a List of Student Scores
+
+Problem Statement:
+You are tasked with sorting a list of student scores in ascending order to prepare a report card. The input is a list of integers representing student scores, and the output should be the sorted list of scores.
+
+You need to implement a sorting algorithm (such as Insertion Sort) to arrange the scores in ascending order.
+
+Input:
+- A list of integers representing the student scores.
+
+Output:
+- A sorted list of integers in ascending order.
+
+Constraints:
+- The list will contain at least one score (i.e., 1 ≤ len(scores) ≤ 1000).
+- Scores will be between 0 and 100, inclusive.
+
+Example:
+Input:
+scores = [85, 95, 76, 90, 92]
+
+Output:
+[76, 85, 90, 92, 95]
+
+Input:
+scores = [50, 60, 45, 72, 88, 91]
+
+Output:
+[45, 50, 60, 72, 88, 91]
