@@ -1,0 +1,34 @@
+Problem Statement:  
+Sort a Matrix Diagonally
+
+Problem Description:
+You are given an `m x n` matrix where each row is sorted in non-decreasing order. Your task is to sort the diagonals of the matrix in ascending order while maintaining the matrix structure. Each diagonal consists of elements where the difference between their row and column indices is the same (i.e., `row - col` is constant).
+
+Algorithm:
+1. Traverse through the matrix and group elements based on their diagonal key (`row - col`).
+2. For each diagonal, sort the elements in ascending order.
+3. Reassign the sorted diagonal elements back into their respective positions in the matrix.
+4. Continue until all diagonals are sorted.
+
+Input:
+- A matrix `mat` of dimensions `m x n`, where `1 ≤ m, n ≤ 100` and `-1000 ≤ mat[i][j] ≤ 1000`.
+
+Output:
+- A matrix of the same size with each diagonal sorted in ascending order.
+
+Examples:
+
+Input 1:
+```python
+mat = [
+    [3, 3, 1, 1],
+    [2, 2, 1, 2],
+    [1, 1, 1, 2]
+]
+
+Output:
+[
+    [1, 1, 1, 1],
+    [1, 2, 2, 2],
+    [1, 2, 3, 3]
+]
